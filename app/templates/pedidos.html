@@ -1,0 +1,19 @@
+{% extends 'bases/base.html' %} 
+{% load static %}
+{% block corpo %}
+<div class="row">
+  {% for imagem in imagens %}
+<div class="card" style="width:400px">
+  <img class="card-img-top" src="{% static ''%}{{ imagem }}"  alt="Card image">
+  <div class="card-body">
+    <h4 class="card-title">
+      {{ titulo_card }}
+    <p class="card-text">
+      {{ descricao }}
+    </p>
+    <a href="https://aula-de-26082023-muriloantunes.python-ii-265813.repl.co/contato" class="btn btn-primary">Carros!</a>
+  </div>
+</div>
+  {% endfor %}
+</div>
+{% endblock %}

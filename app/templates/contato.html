@@ -1,0 +1,23 @@
+{% extends 'bases/base.html' %} 
+{% load static %}
+{% block corpo %}
+<div class="row">
+<div class="card" style="width:400px">
+  <img class="card-img-top" src="{% static 'M.png' %}"  alt="Card image">
+  <div class="card-body">
+    <h4 class="card-title">Mr. Relampago McQueen</h4>
+    <p class="card-text">Ganhador de 7x copas pistão</p>
+    <a href="tel:+5511951854403" class="btn btn-primary">(11)95185-4403</a>
+  </div>
+</div>
+<div class="card" style="width:400px">
+  <img class="card-img-top" src="{% static 'Doc.png' %}"  alt="Card image">
+  <div class="card-body">
+    <h4 class="card-title">Mr. Doc Hudson</h4>
+    <p class="card-text">Ganhador de 3x copas pistão</p>
+    <a href="tel:+5511951854403" class="btn btn-primary">(11)95185-4403</a>
+  </div>
+</div>
+</div>
+{% endblock %}
+
